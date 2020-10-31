@@ -2825,7 +2825,7 @@ html.no-csstransitions .hero-content {
   position: relative;
 }
 
-.s-portfolio::before {
+/* .s-portfolio::before {
   content: "";
   display: block;
   background-color: #b3c2c1;
@@ -2834,7 +2834,7 @@ html.no-csstransitions .hero-content {
   right: 0;
   bottom: 0;
   left: 50%;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * ## portfolio list
