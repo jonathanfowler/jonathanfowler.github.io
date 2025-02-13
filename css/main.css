@@ -57,7 +57,7 @@
  *
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1000px) {
-  .block-1000-full > .column {
+  .block-1000-full>.column {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
     flex: 0 0 100%;
@@ -67,7 +67,7 @@
 }
 
 @media screen and (max-width:900px) {
-  .block-900-full > .column {
+  .block-900-full>.column {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
     flex: 0 0 100%;
@@ -84,6 +84,9 @@
  * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Accounts for fixed header */
 }
 
 @media screen and (max-width:400px) {
@@ -137,7 +140,18 @@ a:active {
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -147,64 +161,94 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-rendering: optimizeLegibility;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
   margin-top: 6rem;
   margin-bottom: 1.6rem;
 }
 
 @media screen and (max-width:600px) {
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4 {
     margin-top: 5.6rem;
   }
 
 }
 
-h5, .h5, h6, .h6 {
+h5,
+.h5,
+h6,
+.h6 {
   margin-top: 4.8rem;
   margin-bottom: 1.2rem;
 }
 
 @media screen and (max-width:600px) {
-  h5, .h5, h6, .h6 {
+
+  h5,
+  .h5,
+  h6,
+  .h6 {
     margin-top: 4.4rem;
     margin-bottom: 0.8rem;
   }
 
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 3.6rem;
   line-height: 1.222;
 }
 
 @media screen and (max-width:600px) {
-  h1, .h1 {
+
+  h1,
+  .h1 {
     font-size: 3rem;
   }
 
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 3rem;
   line-height: 1.25;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 2rem;
   line-height: 1.167;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 2.1rem;
   line-height: 1.333;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.8rem;
   line-height: 1.333;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1.6rem;
   line-height: 1.5;
   text-transform: uppercase;
@@ -360,7 +404,7 @@ code {
   border-radius: 3px;
 }
 
-pre > code {
+pre>code {
   display: block;
   white-space: pre;
   line-height: 2;
@@ -368,7 +412,7 @@ pre > code {
   margin: 0;
 }
 
-pre.prettyprint > code {
+pre.prettyprint>code {
   border: none;
 }
 
@@ -592,7 +636,7 @@ form,
   transform: translate3d(-50%, -50%, 0);
 }
 
-#loader > div {
+#loader>div {
   content: "";
   background: #ffffff;
   width: 6px;
@@ -603,28 +647,28 @@ form,
   border-radius: 50%;
 }
 
-#loader > div:nth-of-type(1) {
+#loader>div:nth-of-type(1) {
   left: 15px;
 }
 
-#loader > div:nth-of-type(3) {
+#loader>div:nth-of-type(3) {
   left: -15px;
 }
 
 /* dots jump */
-.dots-jump > div {
+.dots-jump>div {
   -webkit-animation: dots-jump 1.2s infinite ease;
   animation: dots-jump 1.2s infinite ease;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.dots-jump > div:nth-of-type(1) {
+.dots-jump>div:nth-of-type(1) {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.dots-jump > div:nth-of-type(3) {
+.dots-jump>div:nth-of-type(3) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
@@ -660,19 +704,19 @@ form,
 }
 
 /* dots fade */
-.dots-fade > div {
+.dots-fade>div {
   -webkit-animation: dots-fade 1.6s infinite ease;
   animation: dots-fade 1.6s infinite ease;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.dots-fade > div:nth-of-type(1) {
+.dots-fade>div:nth-of-type(1) {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-.dots-fade > div:nth-of-type(3) {
+.dots-fade>div:nth-of-type(3) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
@@ -708,19 +752,19 @@ form,
 }
 
 /* dots pulse */
-.dots-pulse > div {
+.dots-pulse>div {
   -webkit-animation: dots-pulse 1.2s infinite ease;
   animation: dots-pulse 1.2s infinite ease;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.dots-pulse > div:nth-of-type(1) {
+.dots-pulse>div:nth-of-type(1) {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.dots-pulse > div:nth-of-type(3) {
+.dots-pulse>div:nth-of-type(3) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
@@ -874,15 +918,15 @@ input[type="radio"] {
   display: inline;
 }
 
-label > .label-text {
+label>.label-text {
   display: inline-block;
   margin-left: 1rem;
   font-family: "Gothic A1", sans-serif;
   line-height: inherit;
 }
 
-label > input[type="checkbox"],
-label > input[type="radio"] {
+label>input[type="checkbox"],
+label>input[type="radio"] {
   margin: 0;
   position: relative;
   top: .2rem;
@@ -924,11 +968,9 @@ label > input[type="radio"] {
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
-input:-webkit-autofill:focus
-input:-webkit-autofill,
+input:-webkit-autofill:focus input:-webkit-autofill,
 textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
@@ -1096,17 +1138,17 @@ input::-moz-focus-inner {
   margin: 0;
 }
 
-.lining dt + dt:before,
-.lining dd + dt:before {
+.lining dt+dt:before,
+.lining dd+dt:before {
   content: "\A";
   white-space: pre;
 }
 
-.lining dd + dd:before {
+.lining dd+dd:before {
   content: ", ";
 }
 
-.lining dd + dd:before {
+.lining dd+dd:before {
   content: ", ";
 }
 
@@ -1122,7 +1164,7 @@ input::-moz-focus-inner {
   counter-reset: definitions;
 }
 
-.dictionary-style dt + dt:before {
+.dictionary-style dt+dt:before {
   content: ", ";
   margin-left: -0.2em;
 }
@@ -2936,42 +2978,68 @@ html.no-csstransitions .hero-content {
 
 .folio-item__project-link {
   z-index: 2;
-  display: block;
+  display: inline-block;
   font-family: "Gothic A1", sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 2rem;
-  color: #000000;
-  background-color: #ffffff;
-  padding: .6rem 1.2rem;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  -webkit-transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  position: absolute;
-  bottom: 3.9rem;
-  left: 3rem;
+  background-color: #f9861a;
+  color: #ffffff;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 1.5rem 0;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(249, 134, 26, 0.3);
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  bottom: 0;
+  left: 0;
 }
 
 .folio-item__project-link::before {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 3rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  top: 50%;
-  left: -3rem;
+  display: none;
+  /* Remove the line decoration */
+}
+
+.folio-item__project-link::after {
+  content: ' →';
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.folio-item__project-link:hover::after {
+  opacity: 1;
+  transform: translateX(4px);
 }
 
 .folio-item__project-link:hover,
-.folio-item__project-link:focus,
-.folio-item__project-link:active {
-  background-color: #f9861a;
+.folio-item__project-link:focus {
+  background-color: #e67a0e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 134, 26, 0.4);
   color: #ffffff;
 }
+
+.folio-item__project-link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(249, 134, 26, 0.3);
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 800px) {
+  .folio-item__project-link {
+    display: block;
+    margin: 1.5rem auto;
+    width: calc(100% - 3rem);
+    max-width: 300px;
+  }
+}
+
 
 /* on hover
  *---------------------------------------------- */
@@ -3479,4 +3547,188 @@ html.no-csstransitions .hero-content {
     bottom: 4rem;
   }
 
+}
+
+/* Add these styles to your main.css */
+@media screen and (max-width: 800px) {
+  .folio-item {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .folio-item:active {
+    transform: scale(0.98);
+  }
+
+  .folio-item__thumb {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+  .folio-item__info {
+    /* Override existing absolute positioning for mobile */
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background-color: #ffffff;
+  }
+
+  .folio-item__title {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .folio-item__cat {
+    color: #666666;
+  }
+
+  .folio-item__project-link {
+    /* Make the link more prominent */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin: 1rem 1.5rem 1.5rem;
+    display: inline-block;
+    background-color: #f9861a;
+    color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .folio-item__project-link::before {
+    display: none;
+    /* Remove the line decoration */
+  }
+
+  .folio-item__caption {
+    padding: 0 1.5rem 1.5rem;
+    color: #666666;
+  }
+
+  /* Add a subtle hover effect */
+  .folio-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .folio-item:hover .folio-item__project-link {
+    background-color: #e67a0e;
+  }
+
+  /* Adjust the column layout */
+  .column {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Add to main.css */
+@media screen and (max-width: 800px) {
+  .s-header__menu-toggle {
+    padding: 15px;
+    min-height: 44px;
+    /* Minimum touch target size */
+  }
+
+  .s-header__nav-wrap {
+    max-height: 85vh;
+    /* Prevent nav from being taller than viewport */
+    overflow-y: auto;
+    /* Allow scrolling if needed */
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .s-services,
+  .s-works,
+  .s-contact {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .section-intro {
+    margin-bottom: 6rem;
+  }
+}
+
+/* Add to main.css */
+p,
+.lead {
+  max-width: 70ch;
+  /* Optimal line length for readability */
+}
+
+.h-dark-bg p {
+  color: rgba(255, 255, 255, 0.9);
+  /* Slightly better contrast */
+}
+
+/* Add to main.css */
+a:focus,
+button:focus {
+  outline: 3px solid #f9861a;
+  outline-offset: 2px;
+}
+
+.folio-item:focus-within {
+  outline: 3px solid #f9861a;
+  outline-offset: 4px;
+}
+
+.folio-item__thumb img {
+  background-color: #f0f0f0;
+  /* Placeholder color while loading */
+}
+
+/* Add to main.css */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  font-size: 16px;
+  /* Prevents iOS zoom on focus */
+  padding: 12px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f9861a;
+  box-shadow: 0 0 0 3px rgba(249, 134, 26, 0.2);
+}
+
+.contact-form button {
+  min-height: 44px;
+  /* Better touch target */
+}
+
+/* Add to main.css */
+@media print {
+
+  .s-header,
+  .s-footer,
+  .contact-form {
+    display: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
 }
